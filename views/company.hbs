@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+   <title>Company</title>
+</head>
+
+<body>
+   <div id="main">
+      <div class="back">
+         <a href="/">back</a>
+      </div>
+      <form method="post">
+         <div class="action">
+            <b>Main company:</b>
+            <select name="owner">
+               <option value="">...</option>
+               {{#if owner}}
+               <option selected value={{{owner}}}>{{{owner}}}</option>
+               {{/if}} 
+               {{{option}}}
+            </select>
+            <b>Сompany:</b>
+            <input type='hidden' name='Сompany_id' value={{id}}></input>
+
+            <input type="text" name="company" value={{company}}></input>
+            <br> <b>Money:</b>
+            <br>
+            <input type="number" name="money" value={{money}}></input>
+
+         </div>
+         <div class="submit">
+            <input type="submit" value="save" name="submit"></input>
+            <input type="submit" value="delete" name="submit"></input>
+      </form>
+      </div>
+   </div>
+
+
+</body>
+
+
+</html>

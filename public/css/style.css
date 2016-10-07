@@ -1,0 +1,243 @@
+body {
+   padding: 10px;
+   /* Поля вокруг текста */
+   margin: 10px;
+   /* Отступы вокруг */
+}
+
+#main {
+   margin-left: 30%;
+   width: 40%;
+   background: #fc0;  
+   padding-top: 10px;
+   padding-right: 10px;
+   padding-bottom: 0px;
+   padding-left: 10px;
+ margin:0 auto;
+}
+
+li {
+   margin-left: 0%;
+   width: 100%;
+   
+}
+
+.url{
+width: 100%;
+ border: 1px solid black; 
+border-collapse: collapse; 
+}
+
+
+#list {
+   margin-left: 30%;
+   text-decoration: none;
+   width: 40%;
+   padding-top: 0px;
+   padding-right: 0px;
+   padding-bottom: 0px;
+   padding-left: 0px;
+}
+
+select {
+   width: 100%;
+
+}
+
+input[type=text] {
+   width: 100%;
+}
+
+input[type=number] {
+   width: 30%;
+   height: 30px
+}
+
+.submit {
+   margin: 2px;
+   padding: 2px;
+}
+
+.submit {
+   margin: 10px auto;
+   text-align: left;
+}
+
+input[type=submit]:hover {
+   width: 100px;
+   height: 30px;
+   background: #D8BFD8;
+   margin-top: 0px;
+   margin-right: 2px;
+   margin-bottom: 10px;
+   margin-left: 0px;
+   font-weight: 800;
+color: greenyellow;
+}
+
+input[type=submit] {
+   width: 100px;
+   height: 30px;
+   background: #D8BFD8;
+   margin-top: 0px;
+   margin-right: 2px;
+   margin-bottom: 10px;
+   margin-left: 0px;
+   font-weight: 800;
+color: green;
+}
+
+a:link {
+   alink="#ff0000";
+   padding: 5px 5px 5px 0px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+}
+
+a:hover{
+   color: greenyellow;
+   font-weight: 600;
+}
+
+a {
+   color: green;
+   font-weight: 800;
+}
+
+
+ul{
+  width:100%;
+  margin-bottom:20px;
+  overflow:hidden;
+/*  border-top:1px solid #ccc; */
+  padding: 0 0 0 0px ;
+   float:left;
+}
+
+li{
+/*  line-height:1.5em;
+  border-bottom:1px solid #ccc; */
+  float:left;
+  display:inline;
+  padding: 0 0 0 20px ;
+  list-style-type: square;
+}
+
+.wrap, 
+.wrap ul,
+.wrap li {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  list-style: none;
+}
+
+ li div{
+        display: inline-block;
+
+}
+
+
+#list {
+   overflow: hidden;
+   width: 100%
+}
+
+.wrap1 {
+   white-space: nowrap
+}
+
+.wrap1 div{
+   
+   display: inline-block;
+   border: 1px solid black 
+}
+/*
+ 
+#columns > #left,
+#columns > noindex > #left {
+    max-width: 300px;
+    min-width: 300px;
+    width: 300px;
+}
+
+#columns > #right,
+#columns > noindex > #right {
+    max-width: 200px;
+    min-width: 200px;
+    width: 200px;
+    overflow: hidden;
+}
+
+
+ul li .image {
+padding: 8px 75px 8px 20px;
+background-position: top right;
+background-image:  url(textshadow2.png);
+float: left;
+}
+
+ul li {
+background-image: url(dropshadow.png);
+background-color: #bb0000;
+list-style-type: none;
+text-transform: uppercase;
+font-size: 18px;
+letter-spacing: 1px;
+font-weight: normal;
+margin: 0px 0px 0px 0px;
+}
+
+*/
+
+table
+{
+	border-collapse: collapse;
+	margin-bottom: 3em;
+	font-size: 70%;
+	line-height: 1.1;
+}
+
+tr:hover, td.start:hover, td.end:hover
+{
+	background: #FF9;
+}
+
+th, td
+{
+	padding: .3em .5em;
+}
+
+th
+{
+	font-weight: normal;
+	text-align: left;
+	background: url(tabletree-arrow.gif) no-repeat 2px 50%;
+	padding-left: 15px;
+}
+
+th.name { width: 12em; }
+th.location { width: 12em; }
+th.color { width: 10em; }
+
+thead th
+{
+	background: #c6ceda;
+	border-color: #fff #fff #888 #fff;
+	border-style: solid;
+	border-width: 1px 1px 2px 1px;
+	padding-left: .5em;
+}
+
+tbody th.start
+{
+	background: url(tabletree-dots.gif) 18px 54% no-repeat;
+	padding-left: 26px;
+}
+
+tbody th.end
+{
+	background: url(tabletree-dots2.gif) 18px 54% no-repeat;
+	padding-left: 26px;
+}
