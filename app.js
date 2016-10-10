@@ -13,10 +13,7 @@ var methodOverride = require( 'method-override' );
 
 var app = express();
 
-var port = process.env.PORT || 8080;
-
 var routes = require( './controller/routes' );
-
 
 app.use(favicon(__dirname + '/public/images/favicon.ico'));
 app.set('views', path.join(__dirname, 'views'));
@@ -39,7 +36,6 @@ app.post('/:id', routes.postId)
 
 app.all('*', function (req, res) {res.render('error.hbs')})
 
-
-app.listen(port, function() {
-	console.log('Our app is running on http://localhost:' + port);
+app.listen(process.env.PORT || 3000, function(){
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
 });
