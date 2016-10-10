@@ -1,11 +1,9 @@
 {
   "name": "testApp",
   "version": "0.0.1",
+  "private": "true",
   "description": "test application",
   "main": "app.js",
-  "scripts": {
-    "start": "node app.js"
-  },
   "dependencies": {
     "body-parser": "^1.15.2",
     "consolidate": "^0.14.1",
@@ -20,8 +18,15 @@
     "serve-favicon": "^2.3.0",
     "url": "^0.11.0"
   },
+  "devDependencies": {},
+  "scripts": {
+     "test": "echo \"Error: no test specified\" && exit 1",
+     "start": "node app.js"
+  },
+  "author": "Roman-Sydorovych",
+  "license": "ISC",
    "engines": {
-    "node": "5.9.0",
-    "npm" : "3.7.3"  
+    "node": "5.9.x",
+    "npm" : "3.7.x"  
   }
 }
