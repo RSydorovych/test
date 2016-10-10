@@ -12,6 +12,9 @@ var bodyParser =  require('body-parser');
 var methodOverride = require( 'method-override' );
 
 var app = express();
+
+var port = process.env.PORT || 8080;
+
 var routes = require( './controller/routes' );
 
 
@@ -37,7 +40,6 @@ app.post('/:id', routes.postId)
 app.all('*', function (req, res) {res.render('error.hbs')})
 
 
-
-app.listen(process.env.PORT || 5000, function(){
-  console.log('Our app is running');
+app.listen(port, function() {
+	console.log('Our app is running on http://localhost:' + port);
 });
