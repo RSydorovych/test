@@ -38,7 +38,6 @@ app.all('*', function (req, res) {res.render('error.hbs')})
 
 
 
-
-app.listen(9000);
-
-console.log('Express server listening on : localHost:9000');
+app.listen(process.env.PORT || 3000, function(){
+  console.log('listening on', http.address().port);
+});
