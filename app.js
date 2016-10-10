@@ -39,4 +39,5 @@ app.all('*', function (req, res) {res.render('error.hbs')})
 
 
 app.listen(process.env.PORT || 5000, function(){
+  console.log('Our app is running');
 });
