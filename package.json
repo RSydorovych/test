@@ -2,10 +2,6 @@
   "name": "testApp",
   "version": "0.0.1",
   "description": "test application",
-    "engines": {
-    "node": "5.9.0",
-    "npm" : "3.7.3"  
-  },
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
@@ -24,4 +20,9 @@
     "serve-favicon": "^2.3.0",
     "url": "^0.11.0"
   }
+   "repository": {},
+   "engines": {
+    "node": "5.9.0",
+    "npm" : "3.7.3"  
+  },
 }
